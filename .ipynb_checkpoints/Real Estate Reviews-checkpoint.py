@@ -10,6 +10,9 @@ cursor = duckdb.connect()
 
 
 # %%
+import pandas as pd
+
+# %%
 #Start a DuckDB session
 csv_file_path = 'Property Sales of Melbourne City.csv'
 
@@ -28,7 +31,7 @@ result_df = conn.sql(query).df()
 
 
 # %%
-
+real_estate_data = pd.read_csv('Property Sales of Melbourne City.csv')
 
 
 
